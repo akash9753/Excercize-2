@@ -1,0 +1,13 @@
+<h1>Most Watched Movies</h1>
+<table>
+    <tbody>
+        <tr *ngFor="let movie of movies">
+            <td>{{movie.movieName}} - {{movie.rating}}</td>
+
+        </tr>
+    </tbody>
+</table>
+  
+
+    <button style="margin-top: 8px; margin-right: 4px; background-color: orange;" (click)="changeOrderAsc()" type="button">Sort By Rating Asc</button>
+    <button style="background-color: orange;" (click)="changeOrderDesc()"  type="button">Sort By Rating Desc</button>
